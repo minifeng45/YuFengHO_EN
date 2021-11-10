@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fl. minifeng</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{{ url_for('static', filename='home_dist/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="{{ url_for('static', filename='home_dist/vendor/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+TC:wght@900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{{ url_for('static', filename='home_dist/css/stylish-portfolio.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container px-4 px-lg-5"></div>
+      <a class="navbar-brand" href="#"> 
+        <img src="{{ url_for('static', filename='home_dist/img/profolio.png') }}" width="30" height="30" alt="" style="float:right; margin:0px -20px 0px 0px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto py-4 py-lg-0">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Themes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/cuisine">永續美食</a>
+            <a class="dropdown-item" href="/voyage">永續旅遊</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/anecdote">Coding Life Anecdote</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">CV of failure</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Veg Price Track</a>
+            <a class="dropdown-item" href="#">Satellite Img </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="mailto: braineducation45@gmail.com">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="content-section">
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="img-circle" src="{{ url_for('static', filename='home_dist/img/frontimg.JPG') }}" height="300" width = "300" style="float:center; margin:-70px 0px 0px 150px"> 
+      </div>
+      <div class="col-sm-8">
+          <!-- Section1: Short head of introduction -->
+          <div class="item">
+            <div class="col-lg-10 mx-auto">
+              <h2 class="text-primary">Biography</h1>
+            <div class="item">
+              <h3 class="text-third" style="color:rgb(124, 116, 116)"> A pessimistic cliamte advocator</h3>     
+            </div>
+              <p class="mb-0" style="color:rgb(124, 116, 116)"> Recently work in a sustainable tech firm dedicating to sustainable transformation in Taiwan. 
+                Master at anaylsis of geographic data, alogrithm of geographic statistics. I used to work in Basseterr, St. Kitts & Nevis, studied in Amsterdam, the Netherlands and practice agriculture in Saponcourt, France. </p> 
+              <p class="mb-0" style="color:rgb(124, 116, 116)">  I embrace sustainability. Cycling achieves sustainable voyage, flexitarian corresponds to sustainable cuisine and I am on my way to approach my PhD goal!  </p>    
+            </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <!-- Section2: The icons compose me -->
+    <section class="content-section text-primary text-center" id="services">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a class="service-icon rounded-circle mx-auto mb-3" href="https://www.facebook.com/Meowshroooooom/">
+              <img  src="{{ url_for('static', filename='home_dist/img/field.png') }}" alt="my icon" height="130" width = "120" class = "pb-3 pr-2" > 
+            </a>
+            <h3 class= "text-primary"> Agriculture </h3>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a class="service-icon rounded-circle mx-auto mb-3" href="https://www.facebook.com/Meowshroooooom/">
+              <img  src="{{ url_for('static', filename='home_dist/img/planet-earth.png') }}" alt="my icon" height="130" width = "120" class = "pb-3 pr-2"> 
+            </a>
+            <h3 class= "text-primary"> Environment </h3>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a class="service-icon rounded-circle mx-auto mb-3" href="https://www.facebook.com/Meowshroooooom/">
+              <img  src="{{ url_for('static', filename='home_dist/img/green-technology.png') }}" alt="my icon" height="130" width = "120" class = "pb-3 pr-2" > 
+            </a>
+            <h3 class= "text-primary"> Digitalisation </h3>
+          </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Section3: Jounery  -->
+
+    <div class="content-section bg-light ">
+      <div class="row">
+        <div class="col-sm-8">
+            <div class="item">
+              <div class="col-lg-10 mx-auto">
+                <h1 class="text-primary">Journey</h1>
+                <h4> “I am a native Taiwanese, an agriculturist, an environmentalist, a programmer. 
+                  Sustainability is my lifestyle, also my aspiration. Data is my way to perceive the world.” </h4> <br>
+                <h3 class="text-third" style="color:rgb(124, 116, 116)">
+                  Education
+                </h3>
+                <hr> 
+                <p><img src="{{ url_for('static', filename='home_dist/img/VU_IMG.png') }}" width="30" height="30" alt="" style="float:left; margin:-6px 5px 0px 0px"> <h6>Msc Environment & Resoure Management - Vrije Universiteit Amsterdam</h6></p>
+                  <li>Specialisation: Global Food Challenges</li> <br>
+                <p><img src="{{ url_for('static', filename='home_dist/img/NTU_IMG.png') }}" width="30" height="30" alt="" style="float:left; margin:9px 5px 0px 0px"> <h6>Bsc Agronomy - National Taiwan University</h6></p>
+                  <li>Specialisation: Statistical Genetics</li>
+                <h3 class="text-third" style="color:rgb(124, 116, 116)"> <br>
+                  Work Experience 
+                </h3>
+                <hr>
+                <li><h6>Algorithm Engineer, Wisenvr</h6></li> 
+                <li><h6>Farmer, World Wide Opportunities on Organic Farms</h6></li>
+                <li><h6>Agricultural Technician Assistant, International Cooperation and Development Fund</h6></li>
+                <li><h6>Co-Founder, Meowshroom</h6></li>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <hr>
+      </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center" id="contact">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <h1 class="mb-4">Contact Me</h1>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="mailto: braineducation45@gmail.com ">
+            <i class="icon-envelope-open"></i>
+          </a href= "mailto: abc@example.com">
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/yu-feng-ho/">
+            <i class="icon-social-linkedin"></i>
+          </a href= "https://www.linkedin.com/in/yu-feng-ho/">
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/supermonk00">
+            <i class="icon-social-github"></i>
+          </a href= "https://github.com/supermonk00">
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; minifeng</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='home_dist/vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='home_dist/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{{ url_for('static', filename='home_dist/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='home_dist/vendor/js/stylish-portfolio.min.js') }}"></script>
+
+</body>
+
+</html>

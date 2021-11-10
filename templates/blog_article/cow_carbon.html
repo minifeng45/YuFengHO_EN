@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Who Contributes the Most Carbon Emission?</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='dist/css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/anecdote">Coding Life Anecdote</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/anecdote">Go Back</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <!-- Big title-->
+                        <div class="post-heading">
+                            <h1>Who Contributes the Most Carbon Emission?</h1>
+                            <h2 class="subheading">Reflection and further research after watching Cowspiracy</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">minifeng</a>
+                                on Jan 14, 2021
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>After watching the documentary, “Cowspiracy.” I got shocked by the data provided by the director, Kip Andersen. 51% of greenhouse gas (GHG) was emitted by animal agriculture. Therefore I went for some research, grabbed the data from <a href="https://ourworldindata.org">Our World in Data</a>, and roughly analysed the emission by sector from 1990 to 2016. Then I found out something interesting might be the areas of misunderstanding towards the public.</p>
+                        <a href="#!"><img class="img-fluid" src="{{ url_for('static', filename='dist/assets/img/cow_carbon/1.jpeg') }}" alt="..." /></a>
+                        <h2 class="section-heading">Bar Chart Race for cumulative emission by sector</h2> <!-- Big paragraph-->
+                        <p>To visualise the emission number, I chose an attractive way for clarifying who emits how much greenhouse gas. You might know carbon dioxide (CO₂), but you should acknowledge methane (CH₄), nitrous oxide (N₂O) and ozone (O₃) are all more devastating than CO₂. However, the emission of N₂O and O₃ did not dramatically increase, (actually N₂O increase going with agriculture as well…) so I just focused on the comparison of CO₂ and CH₄.</p>
+                        <h4> Carbon emission </h4>                  <!-- Middle paragraph-->
+                        <p>According to <a href="https://ourworldindata.org">Our World in Data</a>, Electricity is also in the lead, and Transport, Manufacturing and Land use in following.</p>
+                        <!-- youtube link shows -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xXgeREux5n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Agriculture is not even on the list which surprises me. I cannot imagine it emits too little or even zero CO₂. The possible explanation may be it is allocated to other sectors which might indirectly use for Agriculture. For instance, fertilizer might be classified as manufacturing and greenhouse operation might be classified as electricity…</p>
+                        <h4> CH₄ emission </h4> 
+                        <p>Same as CO₂ emission, the number is downloaded from <a href="https://ourworldindata.org">Our World in Data</a>. This time agriculture is in the lead and followed by Fugitive (which is not refugee…. is referred to leaks and other unintended or irregular releases). The third is Waste.</p>
+                        <!-- youtube link shows -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZJd7gL0Jxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Thus, Electricity disappears in this race. Agriculture and Electricity are "yin and yang (陰和陽)" in this emission race. One shows up and the other one hides in shadow. Moreover, to further search for other databases. International Energy Agency gave another perspective to the categorization of methane.</p>
+                        <!-- img -->
+                        <a href="#!"><img class="img-fluid" src="{{ url_for('static', filename='dist/assets/img/cow_carbon/2.png') }}" alt="..." /></a>
+                        <!-- caption -->
+                        <span class="caption text-muted">Sources of methane emissions. <a href="https://www.iea.org/data-and-statistics/charts/sources-of-methane-emissions-2">IEA, Paris</a></span>
+                        <p>Energy shows up in third place, following agriculture. Surprisingly, nature still emits the most methane than any others, but we cannot blame our mother, right?</p>
+                        <h4> GHG emission </h4> 
+                        <!-- quote paragraph -->
+                        <blockquote class="blockquote" >“Who contributes the most carbon emission?”</blockquote>
+                        <a>The competition between agriculture and electricity comes to the final round. (sorry for me watching too much MMA recently…) The thing we need to be aware of is according to <a href = "https://climatechangeconnection.org/emissions/co2-equivalents/">Climate Change Connection</a> methane contains 28x CO₂. Therefore, who is winning?</a>
+                        <!-- youtube link shows -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rFi_ynK5zu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p>Is Still~~~ Electricity!!!!! (judged by the same database <a href="https://ourworldindata.org">Our World in Data</a>). However, the interesting fact that agriculture still occupies second place. Even there is no data for it in CO₂ emission, the result is still impressive.</p>
+                        <blockquote class="blockquote">“So What did the 51% Animal Agriculture Come from?”</blockquote>
+                        <blockquote class="blockquote">“In the real world, there is no competition. They are all INTERCONNECTED”</blockquote>
+                        <h2> Interconnected World </h2>   
+                        <p>To be clear, agriculture itself accounted for 18% of GHG emission, not 51%. However, agriculture is usually mistaken for only food production, but it also includes processing, distribution and retail which is related to land use, manufacturing, transport and waste. The carbon footprint would be added up through every step. It is therefore why Kip Andersen said animal agriculture should take responsibility for 51% of GHG emission. Methane emission from cattle is prominent. The grand amount of emission by the other part of supply chain is astounding as well.</p>                     
+                        <p>As emission by all sectors are all interconnected, then how can we tackle the climate change issue? It is easy! Solve the problems at the same time! Save electricity. Eat less meat. Reduce food waste. We can embody sustainability in daily life by nudging our behaviours, give back love to our mother, EARTH.</p>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; 宇峰 2021</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='dist/js/scripts.js') }}"></script>
+    </body>
+</html>

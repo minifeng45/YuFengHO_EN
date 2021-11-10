@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Clean Blog - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='dist/css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/anecdote">Coding Life Anecdote</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="/anecdote">Go Back</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <!-- Big title-->
+                        <div class="post-heading">
+                            <h1>Title</h1>
+                            <h2 class="subheading">subtitle</h2>
+                            <span class="meta">
+                                Posted by
+                                <a href="#!">Writer</a>
+                                on Mon Date, Year
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h2 class="section-heading">Big paragraph</h2> <!-- Big paragraph-->
+                        <h4> Small Paragraph </h4>                  <!-- Middle paragraph-->
+                        <!-- quote paragraph -->
+                        <blockquote class="blockquote" ></blockquote>
+                        <!-- img -->
+                        <a href="#!"><img class="img-fluid" src="{{ url_for('static', filename='dist/assets/img/img_file/1.jpeg') }}" alt="..." /></a>
+                        <!-- caption -->
+                        <span class="caption text-muted">Caption</span>
+                        <!-- box -->
+                        <div class="container p-3 my-3 border" style="color:rgb(124, 116, 116)" ></div>
+                        <!-- list with dots -->
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <!-- can write code in this part -->
+                        <tbody>
+                            <tr>
+                                <td >
+                                    <pre class= "bg-light">
+code paste here!
+                                </pre> 
+                                </td>
+                            </tr>
+                        </tbody>
+                        <div class="container p-3 my-3 border" style="color:rgb(124, 116, 116)" >
+                            <h6>Mean: 6.170152</h6>
+                            <h6>Variance: 6.170152</h6>
+                            <a href="#!"><img class="img-fluid" src="{{ url_for('static', filename='dist/assets/img/poi_dist/5.jpeg') }}" alt="..." /></a>
+                            <h4>After 3-day work, how many ducks are expected still working for the farmers?</h4>
+                            <p>In this question, it is necessary to look back to the pmf and slightly modify the equation. Instead of the average number of events λ, I rewrite it as the number of events r happened in a given time and the time length we would like to assign. Then the formula is like:</p>
+                            <a href="#!"><img class="img-fluid" src="{{ url_for('static', filename='dist/assets/img/poi_dist/6.gif') }}" alt="..." /></a>
+                            <p>Afterwards, I start calculate the expected events that happened in our given time t. In this case, r is the reciprocal of λ, r = 1/λ = 1/10, and t is 3-day work, 3*16 = 48. However, the time points of departure for all ducks are independent, and for a duck, there are only 2 situation: departure (X = 1) or not departure (X=0). Following this train of thought, I calculate the expectation of departure for a duck. It means the possibility that it is still inside the net after 48 hours. Finally, adding up the expectation of four ducks, we would know the expected ducks are still inside the net and working for us.</p>
+                            <p>The code below illustrates the process.</p>
+                    <!-- subdivider line -->
+                    <hr> 
+                    <!-- credit part -->
+                    <p>&middot; Placeholder text by
+                            <a>宇峰</a>
+                    &middot; Images by
+                            <a>宇峰, Wikipeida</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; 宇峰 2021</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='dist/js/scripts.js') }}"></script>
+    </body>
+</html>

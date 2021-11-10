@@ -1,0 +1,28 @@
+posts = [{"post": "Poisson Process: Four ducks vs. Anti-bird net",
+          "subtitle": "An idea derived from the observation in a french farm", 
+          "url": "/poisson_distribution",
+          "category": "Coding Life Anecdote",
+          'date': 'Jun 6, 2021'},
+
+           {"post": "Who Contributes the Most Carbon Emission?", 
+          "subtitle": 'Reflection and further research after watching Cowspiracy', 
+          "url": "/cow_carbon", 
+          "category": "Coding Life Anecdote",
+          'date': 'Jan 14, 2021'},
+          
+         {"post": "second page tbc", 
+          "subtitle": 'tbc', 
+          "url": "/tbc", 
+          "category": "Coding Life Anecdote",
+          'date': 'tbc'},
+
+         {"post": "食譜：檸檬塔", 
+          "subtitle": '一個來自加勒比海私廚的甜點食譜', 
+          "url": "/lemontart", 
+          "category": "永續美食",
+          'date': 'Oct 30, 2021'},
+        {"post": "單車：環湖。馬肯湖", 
+          "subtitle": '160公里的環湖時光，看清楚馬肯湖邊城市們風光', 
+          "url": "/markenmeer", 
+          "category": "永續旅遊",
+          'date': 'Nov 1, 2020'}]
